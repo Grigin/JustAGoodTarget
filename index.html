@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Интерфейс</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/edbb7941a3.js"></script>
+    <!--<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Play" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">-->
+
+
+    <style>
+        body {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        h1{
+            font-size: 3em;
+        }
+
+        .header,
+        .marketing,
+        .footer {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .header {
+            padding-bottom: 5px;
+            border-bottom: 2px solid #e5e5e5;
+        }
+
+        .header h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 40px;
+        }
+
+        .footer {
+            padding-top: 19px;
+            color: #777;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 730px;
+            }
+        }
+
+        .container-narrow > hr {
+            margin: 30px 0;
+        }
+
+        .main-form{
+            padding-top: -30%;
+        }
+
+
+        .jumbotron {
+            text-align: center;
+            border-bottom: 1px solid #e5e5e5;
+            background-color: alice-blue;
+
+        }
+
+        .jumbotron .reg_n_author{
+            padding-left: 49%;
+            font-size: 15.5px;
+            font-family: 'Sans-serif';
+        }
+
+        .jumbotron .description{
+            position: center
+            font-size: 19px;
+            font-family: 'Sans-serif';
+
+        }
+
+        .jumbotron .btn {
+            padding: 14px 24px;
+            font-size: 20px;
+        }
+
+        .marketing {
+            margin: 40px 0;
+        }
+
+        .marketing p + h4 {
+            margin-top: 28px;
+        }
+
+         .jumbotron .fa-heart{
+            color: #8a9597;
+            padding-right: 45%;
+
+
+	     }
+
+         .jumbotron .fa-heart:hover {
+            color: #DC5240;
+
+         }
+         .jumbotrom .close {
+
+         }
+
+         .age{
+            width: 200px;
+
+         }
+
+         .btn.btn-primary{
+            width: 200px;
+
+         }
+
+         .h1{
+
+         }
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header clearfix">
+        <h1 class="text-muted">Интерфейс v1.0<sup style="color: red;">&alpha;</sup></h1>
+    </div>
+    <div class="jumbotron">
+        <center>
+        <form class="main-form" method='post'>
+            <h4>Введите <b>id</b> группы: </h4>
+                        <div class="form-group">
+                            <input  class="form-control" type='group_id' name='group_id' placeholder='Group id' autofocus required/>
+                        </div>
+                        <br>
+            <h4>Введите <b>описание</b> (ключевые слова): </h4>
+                        <div class="form-group">
+                            <textarea class="form-control" type='keywords' name='keywords' id="keywords" rows="10" cols="50" resize="none"  placeholder='Описание' required/></textarea>
+                        </div>
+                        <br>
+                        <!--<h4>Введите нижний порог возрастного ограничения:</h4>-->
+                        <!--<div class="age">-->
+                                <!--<select style="width=10px;" class="form-control" id="lower_threshold">-->
+                                  <!--<option>1</option>-->
+                                  <!--<option>2</option>-->
+                                  <!--<option>3</option>-->
+                                  <!--<option>4</option>-->
+                                  <!--<option>5</option>-->
+                                  <!--<option>6</option>-->
+                                  <!--<option>7</option>-->
+                                  <!--<option>8</option>-->
+                                  <!--<option>9</option>-->
+                                  <!--<option>10</option>-->
+                                  <!--<option>11</option>-->
+                                  <!--<option>12</option>-->
+                                  <!--<option>13</option>-->
+                                  <!--<option>14</option>-->
+                                  <!--<option>15</option>-->
+                                  <!--<option>16</option>-->
+                                  <!--<option>17</option>-->
+                                  <!--<option>18</option>-->
+                                  <!--<option>19</option>-->
+                                  <!--<option>20</option>-->
+                                  <!--<option>21</option>-->
+                                  <!--<option>22</option>-->
+                                  <!--<option>23</option>-->
+                                  <!--<option>24</option>-->
+                                  <!--<option>25</option>-->
+                                  <!--<option>26</option>-->
+                                  <!--<option>27</option>-->
+                                  <!--<option>28</option>-->
+                                  <!--<option>29</option>-->
+                                  <!--<option>30</option>-->
+                                  <!--<option>40</option>-->
+                                  <!--<option>41</option>-->
+                                  <!--<option>42</option>-->
+                                  <!--<option>43</option>-->
+                                  <!--<option>44</option>-->
+                                  <!--<option>45</option>-->
+                                  <!--<option>46</option>-->
+                                  <!--<option>47</option>-->
+                                  <!--<option>48</option>-->
+                                  <!--<option>49</option>-->
+                                  <!--<option>50</option>-->
+                                  <!--<option>51</option>-->
+                                  <!--<option>52</option>-->
+                                  <!--<option>53</option>-->
+                                  <!--<option>54</option>-->
+                                  <!--<option>55</option>-->
+                                  <!--<option>56</option>-->
+                                  <!--<option>57</option>-->
+                                  <!--<option>58</option>-->
+                                  <!--<option>59</option>-->
+                                  <!--<option>60</option>-->
+                                  <!--<option>61</option>-->
+                                  <!--<option>62</option>-->
+                                  <!--<option>63</option>-->
+                                  <!--<option>64</option>-->
+                                  <!--<option>65</option>-->
+                                  <!--<option>66</option>-->
+                                  <!--<option>67</option>-->
+                                  <!--<option>68</option>-->
+                                  <!--<option>69</option>-->
+                                  <!--<option>70</option>-->
+                                  <!--<option>71</option>-->
+                                  <!--<option>72</option>-->
+                                  <!--<option>73</option>-->
+                                  <!--<option>74</option>-->
+                                  <!--<option>75</option>-->
+                                  <!--<option>76</option>-->
+                                  <!--<option>77</option>-->
+                                  <!--<option>78</option>-->
+                                  <!--<option>79</option>-->
+                                  <!--<option>80</option>-->
+                                  <!--<option>81</option>-->
+                                  <!--<option>82</option>-->
+                                  <!--<option>83</option>-->
+                                  <!--<option>84</option>-->
+                                  <!--<option>85</option>-->
+                                  <!--<option>86</option>-->
+                                  <!--<option>87</option>-->
+                                  <!--<option>88</option>-->
+                                  <!--<option>89</option>-->
+                                  <!--<option>90</option>-->
+                                  <!--<option>91</option>-->
+                                  <!--<option>92</option>-->
+                                  <!--<option>93</option>-->
+                                  <!--<option>94</option>-->
+                                  <!--<option>95</option>-->
+                                  <!--<option>96</option>-->
+                                  <!--<option>97</option>-->
+                                  <!--<option>98</option>-->
+                                  <!--<option>99</option>-->
+                                  <!--<option>100</option>-->
+
+                                <!--</select>-->
+                        <!--</div>-->
+                        <!--<br>-->
+                         <!--<h4>Введите верхний порог возрастного ограничения: </h4>-->
+                        <!--<div class="age">-->
+                                <!--<select style="width=10px;" class="form-control" id="upper_threshold">-->
+                                    <!--<option>1</option>-->
+                                  <!--<option>2</option>-->
+                                  <!--<option>3</option>-->
+                                  <!--<option>4</option>-->
+                                  <!--<option>5</option>-->
+                                  <!--<option>6</option>-->
+                                  <!--<option>7</option>-->
+                                  <!--<option>8</option>-->
+                                  <!--<option>9</option>-->
+                                  <!--<option>10</option>-->
+                                  <!--<option>11</option>-->
+                                  <!--<option>12</option>-->
+                                  <!--<option>13</option>-->
+                                  <!--<option>14</option>-->
+                                  <!--<option>15</option>-->
+                                  <!--<option>16</option>-->
+                                  <!--<option>17</option>-->
+                                  <!--<option>18</option>-->
+                                  <!--<option>19</option>-->
+                                  <!--<option>20</option>-->
+                                  <!--<option>21</option>-->
+                                  <!--<option>22</option>-->
+                                  <!--<option>23</option>-->
+                                  <!--<option>24</option>-->
+                                  <!--<option>25</option>-->
+                                  <!--<option>26</option>-->
+                                  <!--<option>27</option>-->
+                                  <!--<option>28</option>-->
+                                  <!--<option>29</option>-->
+                                  <!--<option>30</option>-->
+                                  <!--<option>40</option>-->
+                                  <!--<option>41</option>-->
+                                  <!--<option>42</option>-->
+                                  <!--<option>43</option>-->
+                                  <!--<option>44</option>-->
+                                  <!--<option>45</option>-->
+                                  <!--<option>46</option>-->
+                                  <!--<option>47</option>-->
+                                  <!--<option>48</option>-->
+                                  <!--<option>49</option>-->
+                                  <!--<option>50</option>-->
+                                  <!--<option>51</option>-->
+                                  <!--<option>52</option>-->
+                                  <!--<option>53</option>-->
+                                  <!--<option>54</option>-->
+                                  <!--<option>55</option>-->
+                                  <!--<option>56</option>-->
+                                  <!--<option>57</option>-->
+                                  <!--<option>58</option>-->
+                                  <!--<option>59</option>-->
+                                  <!--<option>60</option>-->
+                                  <!--<option>61</option>-->
+                                  <!--<option>62</option>-->
+                                  <!--<option>63</option>-->
+                                  <!--<option>64</option>-->
+                                  <!--<option>65</option>-->
+                                  <!--<option>66</option>-->
+                                  <!--<option>67</option>-->
+                                  <!--<option>68</option>-->
+                                  <!--<option>69</option>-->
+                                  <!--<option>70</option>-->
+                                  <!--<option>71</option>-->
+                                  <!--<option>72</option>-->
+                                  <!--<option>73</option>-->
+                                  <!--<option>74</option>-->
+                                  <!--<option>75</option>-->
+                                  <!--<option>76</option>-->
+                                  <!--<option>77</option>-->
+                                  <!--<option>78</option>-->
+                                  <!--<option>79</option>-->
+                                  <!--<option>80</option>-->
+                                  <!--<option>81</option>-->
+                                  <!--<option>82</option>-->
+                                  <!--<option>83</option>-->
+                                  <!--<option>84</option>-->
+                                  <!--<option>85</option>-->
+                                  <!--<option>86</option>-->
+                                  <!--<option>87</option>-->
+                                  <!--<option>88</option>-->
+                                  <!--<option>89</option>-->
+                                  <!--<option>90</option>-->
+                                  <!--<option>91</option>-->
+                                  <!--<option>92</option>-->
+                                  <!--<option>93</option>-->
+                                  <!--<option>94</option>-->
+                                  <!--<option>95</option>-->
+                                  <!--<option>96</option>-->
+                                  <!--<option>97</option>-->
+                                  <!--<option>98</option>-->
+                                  <!--<option>99</option>-->
+                                  <!--<option>100</option>-->
+                                <!--</select>-->
+                        <!--</div>-->
+                        <!--<br>-->
+                        <!--<div class="custom-control custom-checkbox">-->
+  <!--<input type="checkbox" class="custom-control-input" id="agena">-->
+  <!--<label class="custom-control-label" for="agena"> — Включать людей, не указавших свой возраст</label>-->
+<!--</div>-->
+                        <br>
+                        <input class="btn btn-primary" value="Найти!" type='submit'/>
+        </form>
+            </center>
+    </div>
+
+
+
+    <footer class="footer">
+        <p>&copy; 2018 Innokenty Grigoriev</p>
+    </footer>
+
+</div> <!-- /container -->
+
+
+</body>
+</html>

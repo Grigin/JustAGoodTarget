@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loading</title>
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <style>
+        .spinner-container {
+        padding-top: 30px;
+}
+
+.btn.btn-success{
+            width: 200px;
+            position: relative;
+         }
+
+.spinner {
+	position: relative;
+	display: inline-block;
+
+	height: 50px;
+	width: 50px;
+	-webkit-animation: rotation .6s infinite linear;
+	   -moz-animation: rotation .6s infinite linear;
+		 -o-animation: rotation .6s infinite linear;
+			animation: rotation .6s infinite linear;
+	border: 6px solid rgba(0, 174, 249, .15);
+	border-top: 6px solid rgba(0, 174, 249, .8);
+	border-radius: 100%;
+}
+
+@-webkit-keyframes rotation {
+	from {-webkit-transform: rotate(0deg);}
+	to   {-webkit-transform: rotate(359deg);}
+}
+
+@-moz-keyframes rotation {
+	from {-moz-transform: rotate(0deg);}
+	to   {-moz-transform: rotate(359deg);}
+}
+
+@-ms-keyframes rotation {
+	from {-moz-transform: rotate(0deg);}
+	to   {-moz-transform: rotate(359deg);}
+}
+
+@-o-keyframes rotation {
+	from {-o-transform: rotate(0deg);}
+	to   {-o-transform: rotate(359deg);}
+}
+
+@keyframes rotation {
+	from {transform: rotate(0deg);}
+	to   {transform: rotate(359deg);}
+}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/edbb7941a3.js"></script>
+
+    <div class="jumbotron">
+    <h5>Пока наша модель ищет потенциальных юзеров, предлагаем Вам ввести сообщение для отправки:</h5>
+        <br><form  class="main-form" method='post'>
+     <div class="form-group">
+         <textarea class="form-control" type='message' name='message' id="message" rows="10" cols="50" resize="none"  placeholder='Сообщение клиентам' required/></textarea>
+     </div>
+        <br><center>  <input class="btn btn-success"  value="Отправить" type='submit'/></center>
+        </form>
+            <center> <div class="spinner-container">
+	<div class="spinner"></div>
+            </div></center>
+</div>
+
+</head>
+<body>
+
+</body>
+</html>
